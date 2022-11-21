@@ -1,0 +1,29 @@
+<view>
+<image class="bg-image1" mode="scaleToFill" src="http://m.qpic.cn/psc?/V13o297P0pKsa6/45NBuzDIW489QBoVep5mcXs7yIofVt*Z.uwgdqFCja0oHai3sJwBn.elnlMtkt7t02zNpDJ7k2MNgrvh4vRpWzCJbdXaTmb5sG9JcSVtZps!/b&bo=OASrCAAAAAABF68!&rf=viewer_4"></image>
+</view>
+
+<view>
+<text class="con">多人模式</text>
+</view>
+
+<view>
+<image class="bg-image2" mode="scaleToFill" src="http://r.photo.store.qq.com/psc?/V13o297P0pKsa6/45NBuzDIW489QBoVep5mcaGvVOqbjZWcT3FgGfqnElHdmwr58fcQP0e.Nprao4AnWGwOm*LhI3e5YBlsqWUO41HrO3Lp2LVfDLzJgzeqkX0!/r"></image>
+</view>
+
+<!--创建房间页面模块-->
+<view>
+  <button bindtap="go2newroom" style="height:10vh;display:flex;flex-direction:column;align-items:center;position:fixed;bottom:570rpx;left:0;right:0;justify-content:space-between;font-size: 25px;font-weight: bold;background-color: transparent;color: #38332d;">创建房间</button>   
+</view>
+<!--加入房间页面模块-->
+<view>
+  <button bindtap="go2quickroom" style="height:10vh;display:flex;flex-direction:column;align-items:center;position:fixed;bottom:450rpx;left:0;right:0;justify-content:space-between;font-size: 25px;font-weight: bold;background-color: transparent;color: #38332d;">加入房间</button>   
+</view>
+<!--博饼历史弹窗模块-->
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+ 
+<view class="modalDlg" wx:if="{{showModal}}">
+    <text>博饼历史</text>
+    <button bindtap="go" style="background-color: rgb(255, 255, 255);text-align: center;line-height: 500px;">返回</button>
+</view>
+ 
+<button bindtap="submit" style="position:absolute; background-color: transparent;border-color:transparent ; line-height: 40px;top:480px;font-size: 25px; align-items: center;  text-align: center;left: 26.5%; justify-content: space-between;color: #38332d;">博饼历史</button>
